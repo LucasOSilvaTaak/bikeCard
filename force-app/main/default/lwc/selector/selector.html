@@ -1,0 +1,15 @@
+<template>
+  <div class="slds-grid slds-grid_vertical wrapper">
+    <header class="header">Available Bikes for {name}</header>
+    <section class="slds-grid content">
+      <div class="slds-grid columns">
+        <main class="slds-large-order_2 main" >
+          <c-list onproductselected={handleProductSelected}></c-list>
+        </main>
+        <aside class="slds-large-order_3 sidebar-second">
+          <c-detail product-id={selectedProductId}></c-detail>
+        </aside>
+      </div>
+    </section>
+  </div>
+</template>
