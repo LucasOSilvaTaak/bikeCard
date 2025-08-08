@@ -1,0 +1,23 @@
+<template>
+    
+    <template lwc:if={ready}>
+
+        <div>
+            <div> Name: {name}</div>
+            <div> Description: {description}</div>
+            <div> Category: {category}</div>
+            <div> Price: {price}</div>
+            <div> Material: {material}</div>
+        </div>
+    
+    </template>
+    <template lwc:else>
+        <div id="waiting">Loading...</div>
+    </template>
+
+    <div>
+        <c-bike bike={bike}></c-bike>
+    </div>
+    
+
+</template>
